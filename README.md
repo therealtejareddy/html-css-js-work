@@ -1,1 +1,1 @@
-# Work of HTML, CSS & JS 🤓
+# Work of HTML, CSS & Javascript 🤓
