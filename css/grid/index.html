@@ -5,17 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grids</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            place-items: center;
+        }
+        .links{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-column-gap: 4rem;
+            grid-row-gap: 1rem;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <main class="main">
-        <ul>
-            <li><a href="./grid1.html" target="_blank">Grid 1</a></li>
-            <li><a href="./grid2.html" target="_blank">Grid 2</a></li>
-            <li><a href="./grid3.html" target="_blank">Grid 3</a></li>
-            <li><a href="#">Grid 4</a></li>
-            <li><a href="#">Grid 5</a></li>
-            <li><a href="#">Grid 6</a></li>
-        </ul>
+        <div class="links">
+            <div><a href="./grid1.html" target="_blank">Grid 1</a></div>
+            <div><a href="./grid2.html" target="_blank">Grid 2</a></div>
+            <div><a href="./grid3.html" target="_blank">Grid 3</a></div>
+            <div><a href="./grid4.html" target="_blank">Grid 4</a></div>
+            <div><a href="./grid5.html" target="_blank">Grid 5</a></div>
+            <div><a href="./grid6.html" target="_blank">Grid 6</a></div>
+        </div>
     </main>
 </body>
 </html>
